@@ -1,0 +1,56 @@
+@charset "utf-8";
+body{
+    background-color: red;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+#footer {
+    max-width: 1024px;
+    margin: 0 auto;
+
+    
+    padding: 5px 5px;
+    box-sizing: border-box;
+    border-collapse: collapse;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: white;
+    /* height: 50px; */
+}
+#footer img{
+    margin: 10px 0;
+    width: 120px;
+    /* display: block; */
+}
+#footer p{
+    margin: 10px 0;
+    /* padding: 20px 0; */
+}
+.col{
+    display: flex;
+    flex-direction: column;
+}
+[class^='social-']{
+    display: inline-block;
+    /* background-color: white; */
+    width: 28px;
+    height: 28px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 10px;
+    border: none;
+    box-sizing: border-box;
+}
+
+#footer .social-face{
+    background-size: 10px;
+    background-image: url("../icon/face.svg");
+}
+#footer .social-insta{
+    background-size: 20px;
+    background-image: url("../icon/insta.svg");
+    
+}

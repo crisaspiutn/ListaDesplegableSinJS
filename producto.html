@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/src/icon/favicon cristian aspi.png" rel="icon" type="image/png" />
+    <style>
+        #imagen{
+            width: 400px;
+        }
+    </style>
+    <title>producto</title>
+</head>
+<body>
+    <h1>producto</h1>
+    <figcaption id="imagen-container">
+        
+    </figcaption>
+    <script>
+        const imagen=document.getElementById("imagen-container");
+        const foto=document.createElement("img");
+        foto.src="/src/img/"+location.search.slice(1).split("=")[1]+".jpeg";
+        foto.id="imagen";
+        console.log(location.search.slice(1).split("=")[1]);
+        imagen.appendChild(foto);
+    </script>
+</body>
+</html>
